@@ -13,11 +13,13 @@ apt install -y apache2
 #MYSQL
 echo -e "Installing Mysql\n"
 DEBIAN_FRONTEND=noninteractive apt install mysql-server -y
-mysqladmin -u root password $PASSWORD
 #Run the MySQL Secure Installation wizard
 mysql_secure_installation <<EOF
+y
+0
 $PASSWORD
-n
+$PASSWORD
+y
 y
 y
 y

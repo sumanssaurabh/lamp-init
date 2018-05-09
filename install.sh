@@ -1,5 +1,4 @@
 #!/bin/bash
-PASSWORD=
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root" 
    exit 1
@@ -13,16 +12,6 @@ apt install -y apache2
 #MYSQL
 echo -e "Installing Mysql\n"
 DEBIAN_FRONTEND=noninteractive apt install mysql-server -y
-#Run the MySQL Secure Installation wizard
-mysql_secure_installation <<EOF
-$PASSWORD
-$PASSWORD
-y
-y
-y
-y
-y
-EOF
 #PHP
 echo -e "Installing PHP"
 apt install -y php libapache2-mod-php php-mysql

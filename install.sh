@@ -15,8 +15,6 @@ echo -e "Installing Mysql\n"
 DEBIAN_FRONTEND=noninteractive apt install mysql-server -y
 #Run the MySQL Secure Installation wizard
 mysql_secure_installation <<EOF
-y
-0
 $PASSWORD
 $PASSWORD
 y

@@ -19,5 +19,5 @@ apt remove -y php libapache2-mod-php php-mysql \
 php-cli php-common php-xml php-gd \
 php-curl php-mbstring php-xmlrpc \
 php-imagick php-pspell php-imap
-apt-get autoremove -y
-apt-get autoclean -y
+apt autoremove -y
+apt autoclean -y

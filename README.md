@@ -1,3 +1,3 @@
-# lamp-init
-Install LAMP server .
-Tested on ubuntu 18.04 LTS
+# LAMP-init
+Install LAMP server.
+Tested on Ubuntu server and desktop version.
